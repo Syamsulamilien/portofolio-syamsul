@@ -1,0 +1,520 @@
+/* Global Styles */
+body {
+  background-color: #121212; /* Warna gelap untuk tema global */
+  color: #ffffff;
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+section {
+  padding: 50px 0;
+}
+
+/* Tombol */
+.btn-primary {
+  background-color: #ff5722; /* Warna oranye terang */
+  border: none;
+}
+
+.btn-primary:hover {
+  background-color: #e64a19;
+  transition: 0.3s ease;
+}
+
+/* Animasi pulse untuk gambar */
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* Animasi fade-in untuk teks */
+@keyframes fadeInText {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.text-center {
+  animation: fadeInText 2s ease-out;
+}
+
+
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+/* App Styles */
+
+.App {
+  animation: gradientBackground 10s infinite;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+  animation: App-logo-spin infinite 20s linear;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Header Styles */
+header {
+  background-color: #282c34;
+  padding: 20px;
+  color: white;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  margin: 0;
+}
+
+header nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 0;
+  margin: 20px 0 0 0;
+}
+
+header nav ul li a {
+  color: #61dafb;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+header nav ul li a:hover {
+  text-decoration: underline;
+}
+
+
+
+.img-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Animasi bergerak untuk foto */
+.animated-photo {
+  transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+
+.animated-photo:hover {
+  transform: translateY(-10px) rotate(5deg); /* Efek bergerak ke atas dan rotasi */
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2); /* Efek bayangan lebih dalam */
+}
+
+/* Efek kursor pengetikan */
+.react-typed-cursor {
+  color: #0056b3;
+  font-size: 24px;
+}
+
+
+.img-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Animasi bergerak untuk foto */
+.animated-photo {
+  transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+
+.animated-photo:hover {
+  transform: translateY(-10px) rotate(5deg); /* Efek bergerak ke atas dan rotasi */
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2); /* Efek bayangan lebih dalam */
+}
+
+/* Animasi bergerak untuk teks */
+.animated-text {
+  animation: moveText 2s infinite alternate;
+}
+
+@keyframes moveText {
+  0% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  50% {
+    transform: translateX(15px); /* Bergerak sedikit ke kanan */
+    opacity: 0.7;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+button {
+  font-size: 1.1rem;
+  padding: 10px 20px;
+  border-radius: 25px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3; /* Warna tombol saat hover */
+}
+
+
+
+#about h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+#about p {
+  font-size: 1rem;
+  color: #333;
+}
+
+.projects-section {
+  padding: 120px 0; /* Padding atas dan bawah */
+  background-color: #f8f9fa; /* Warna latar belakang abu-abu muda */
+}
+
+.projects-section h2 {
+  font-weight: bold;
+  color: #333;
+}
+/* Animasi untuk gambar proyek */
+.card-image {
+  height: 200px; 
+  object-fit: cover;
+  border-radius: 5px;
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+/* Efek animasi saat mouse hover pada gambar */
+.card-image:hover {
+  transform: scale(1.1); /* Membesarkan gambar */
+  filter: brightness(80%); /* Menurunkan kecerahan gambar */
+}
+
+/* Animasi untuk kartu saat hover */
+.card {
+  border: 2px solid #dee2e6;
+  transition: transform 0.3s ease;
+}
+
+.card-text {
+  font-size: 0.9rem;
+  color: #6c757d;
+}
+
+.text-muted {
+  font-size: 0.9rem;
+  color: #868e96;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+/* Animasi fade-in untuk teks dan tombol */
+.card-body {
+  padding: 20px;
+  background-color: #f8f9fa;
+  border-radius: 10px;
+}
+
+.card-body h5, .card-body p {
+  opacity: 0;
+  animation: fadeIn 1s forwards;
+}
+
+.card-body button {
+  opacity: 0;
+  animation: fadeIn 1.5s forwards;
+}
+
+.card-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+
+/* Contact Section */
+
+
+#contact h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+#contact form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+#contact form label {
+  font-size: 1rem;
+  color: #333;
+}
+
+#contact form input,
+#contact form textarea {
+  width: 100%;
+  max-width: 400px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+#contact form button {
+  padding: 10px 20px;
+  background: #61dafb;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#contact form button:hover {
+  background: #21a1f1;
+}
+/* Styling untuk Bagian Sosial Media */
+#contact .social-link {
+  color: #6c757d;
+  margin: 15px;
+  font-size: 40px; /* Ukuran ikon sedikit lebih besar */
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+#contact .social-link:hover {
+  color: #007bff; /* Ubah warna menjadi biru saat hover */
+  transform: translateY(-5px); /* Efek mengangkat saat hover */
+}
+
+/* Spesifik untuk Setiap Ikon Media Sosial */
+#contact .social-link.instagram:hover {
+  color: #E4405F; /* Warna Instagram */
+}
+
+#contact .social-link.linkedin:hover {
+  color: #0e76a8; /* Warna LinkedIn */
+}
+
+#contact .social-link.github:hover {
+  color: #333; /* Warna GitHub */
+}
+
+#contact h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 20px;
+  color: #343a40;
+}
+
+#contact p {
+  font-size: 1rem;
+  text-align: center;
+  margin-bottom: 40px;
+  color: #6c757d;
+}
+
+/* Tambahkan padding atau margin tambahan jika diperlukan */
+#contact {
+  margin-top: 100px; /* Menambahkan margin tambahan jika perlu */
+}
+
+/* Footer */
+footer {
+  background-color: #282c34;
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+
+main {
+  margin-top: 50px;
+}
+
+#about img {
+  max-width: 100%;
+  height: 400px;
+  width: 400px;
+}
+
+footer {
+  margin-top: 20px;
+}
+
+/* Membungkus gambar dengan animasi */
+.animated-photo {
+  display: inline-block;
+  animation: bounce 5s infinite; /* Animasi melompat */
+}
+
+/* Gaya untuk gambar bulat sempurna */
+.animated-photo img {
+  width: 400px; /* Lebar tetap */
+  height: 400px; /* Tinggi tetap sama dengan lebar */
+  border-radius: 50%; /* Membuat gambar menjadi lingkaran sempurna */
+  object-fit: cover; /* Mengisi lingkaran dengan gambar secara proporsional */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Menambahkan bayangan */
+}
+
+/* Animasi melompat */
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+.txt-rotate {
+  font-weight: bold;
+  font-size: 2rem;
+  color: #333;
+  display: inline-block;
+}
+
+button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+
+.hero-image {
+  animation: pulse 8s infinite;
+  border: 5px solid #ff5722; /* Tambahkan efek bingkai */
+  background-color: #f8f9fa; /* Warna latar belakang abu-abu muda */
+
+}
+
+
+
+
+.App {
+  animation: gradientBackground 10s infinite;
+}
+
+.skill-section {
+  background-color: #f8f9fa;
+}
+
+.skill-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background: linear-gradient(135deg, #e9ecef, #ffffff);
+}
+
+.skill-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.skill-header h5 {
+  font-size: 1.25rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.skill-bar .progress-bar {
+  font-size: 0.9rem;
+  font-weight: bold;
+}
+
+
+.progress-bar-custom {
+  height: 1.5rem;
+  background: linear-gradient(90deg, #4facfe 0%, #00f2fe 100%);
+  color: #fff;
+  font-weight: bold;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-nav .nav-link {
+  font-size: 1.1rem;
+  padding: 0.5rem 1rem;
+  transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #007bff; /* Warna hover */
+}
+
+.mt-10 {
+  margin-top: 13rem;
+}
+
+
+
+.circle {
+  width: 100px;
+  height: 100px;
+}
+
+
+
+
+
+
+
+
+
+
+
